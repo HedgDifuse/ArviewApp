@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.hedgdifuse.arviewapp.R
 import com.hedgdifuse.arviewapp.databinding.ItemGameCardBinding
 import com.hedgdifuse.arviewapp.model.TwitchGame
+import java.text.NumberFormat
 
 class GameItemAdapter: RecyclerView.Adapter<GameItemAdapter.GameItemViewHolder>() {
 
@@ -25,17 +26,18 @@ class GameItemAdapter: RecyclerView.Adapter<GameItemAdapter.GameItemViewHolder>(
         with(holder.binding) {
             val item = data[position]
             val context = root.context
+            val numberFormat = NumberFormat.getNumberInstance()
 
             gameImage.setImageURI(item.game.box["large"])
             gameName.text = item.game.name
 
             gameChannelsCount.text = context
                 .getString(R.string.channels_count)
-                .format(item.channels)
+                .format(numberFormat.format(item.channels))
 
             gameViewersCount.text = context
                 .getString(R.string.viewers_count)
-                .format(item.viewers)
+                .format(numberFormat.format(item.viewers))
         }
     }
 

@@ -1,6 +1,5 @@
 package com.hedgdifuse.arviewapp.presentation.viewmodel
 
-import android.util.Log
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.hedgdifuse.arviewapp.database.dao.TwitchGamesDatabase
@@ -12,7 +11,6 @@ import kotlinx.coroutines.launch
 import org.koin.core.component.KoinApiExtension
 import org.koin.core.component.KoinComponent
 import org.koin.core.component.inject
-import retrofit2.HttpException
 
 @OptIn(KoinApiExtension::class)
 class TwitchGamesViewModel: ViewModel(), KoinComponent {
