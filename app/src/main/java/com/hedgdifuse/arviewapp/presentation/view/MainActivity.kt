@@ -1,21 +1,18 @@
 package com.hedgdifuse.arviewapp.presentation.view
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.activity.viewModels
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.isVisible
-import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.android.material.snackbar.BaseTransientBottomBar
 import com.google.android.material.snackbar.Snackbar
 import com.hedgdifuse.arviewapp.R
 import com.hedgdifuse.arviewapp.databinding.ActivityMainBinding
-import com.hedgdifuse.arviewapp.model.TwitchGame
 import com.hedgdifuse.arviewapp.presentation.adapter.GameItemAdapter
 import com.hedgdifuse.arviewapp.presentation.viewmodel.TwitchGamesViewModel
 import com.hedgdifuse.arviewapp.router.RouterState
-import org.koin.android.ext.android.bind
 
 class MainActivity : AppCompatActivity() {
 

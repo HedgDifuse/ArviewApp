@@ -6,7 +6,6 @@ import androidx.room.OnConflictStrategy
 import androidx.room.Query
 import com.hedgdifuse.arviewapp.Constants.TABLE_NAME
 import com.hedgdifuse.arviewapp.database.entity.TwitchGameEntity
-import com.hedgdifuse.arviewapp.model.TwitchGame
 
 @Dao
 interface TwitchGamesDAO {
