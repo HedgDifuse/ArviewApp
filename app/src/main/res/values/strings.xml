@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ArviewApp</string>
+    <string name="games_list">Список игр</string>
+    <string name="viewers_count">Зрителей: %s</string>
+    <string name="channels_count">Каналов: %s</string>
+    <string name="error_when_loading">Произошла ошибка при загрузке списка игр</string>
+    <string name="retry">Повторить</string>
+</resources>

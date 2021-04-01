@@ -1,0 +1,17 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Theme.ArviewApp" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="android:textColor">@color/colorText</item>
+        <item name="colorSecondary">@color/colorPrimary</item>
+        <item name="colorSurface">@color/colorSurface</item>
+
+        <item name="android:colorBackground">@color/colorBackground</item>
+        <item name="android:statusBarColor" tools:targetApi="l">@color/colorPrimary</item>
+    </style>
+
+    <style name="Theme.Splash" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="android:statusBarColor" tools:targetApi="l">@color/colorBackground</item>
+        <item name="android:windowBackground">@drawable/splash_screen</item>
+    </style>
+</resources>
