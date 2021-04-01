@@ -1,5 +1,6 @@
 package com.hedgdifuse.arviewapp.presentation.view
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.activity.viewModels
@@ -39,6 +40,17 @@ class MainActivity : AppCompatActivity() {
                 if(!canScrollVertically(1)) {
                     gamesViewModel.fetchGames()
                 }
+            }
+        }
+
+        with(binding.toolbar) {
+            setOnMenuItemClickListener {
+
+                if(it.itemId == R.id.main_menu_review) {
+                    startActivity(Intent(this@MainActivity, ReviewActivity::class.java))
+                }
+
+                true
             }
         }
 
